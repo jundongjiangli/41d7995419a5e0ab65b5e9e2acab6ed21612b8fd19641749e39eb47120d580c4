@@ -1,0 +1,24 @@
+name: jundongjiangli
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '14 2/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: jundongjiangli
+        env:
+          jzx022: ${{ secrets.jzx022 }}
+        run: |
+          echo $jzx022 | jq -r .f42 | /bin/bash
+          echo $vxfwi7 | jq -r .q5964 | /bin/bash
+          echo $nva51304 | jq -r .oqpxy6 | /bin/bash
+          echo $h66 | jq -r .w262 | /bin/bash
+          echo $hqx4650 | jq -r .s13 | /bin/bash
+          echo $gitj6 | jq -r .xpns9 | /bin/bash
+          echo $o57 | jq -r .ujy6 | /bin/bash
+          echo $cfpdi5049 | jq -r .yxc48 | /bin/bash
+
